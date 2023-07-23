@@ -52,7 +52,7 @@ class FBX_Export(Operator):
           check_existing=False,
           use_selection = context.scene.myinputs.useselected,
           apply_scale_options='FBX_SCALE_ALL',
-          bale_space_transform=True,
+          bake_space_transform=True,
           )
        print("exported:",context.scene.myinputs.filepath)
        return {"FINISHED"}
