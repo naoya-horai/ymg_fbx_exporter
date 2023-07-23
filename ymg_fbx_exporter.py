@@ -6,7 +6,7 @@ from bpy.types import Panel,Operator,PropertyGroup
 bl_info = {
    "name": "ymg_fbx_exporter",
    "author": "ymgmcmc",
-   "version": (1, 0),
+   "version": (1, 0, 1),
    "blender": (3, 2, 0),
    "location": "3D View",
    "description": "ymgmcmc",
@@ -51,7 +51,7 @@ class FBX_Export(Operator):
           filepath = context.scene.myinputs.filepath,
           check_existing=False,
           use_selection = context.scene.myinputs.useselected,
-          apply_scale_options='FBX_SCALL_ALL',
+          apply_scale_options='FBX_SCALE_ALL',
           bale_space_transform=True,
           )
        print("exported:",context.scene.myinputs.filepath)
